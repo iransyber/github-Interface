@@ -3,17 +3,28 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 4px;
+    background-color: #225ed8;
 
     input{
-        border: 1px solid #ccc;
+        border: 0px solid #ccc;
         border-radius: 8px;
-        width: 100%;
+        width: 20%;
         height: 44px;
         margin-right: 8px;
         padding: 8px;
-        font-weight: 500;
+        font-weight: 500; 
+        background-color:#ccc;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        &:focus{
+          border: 1px solid #ccc;
+        }
+
+        &:hover {
+            border: 1px solid #ccc;
+        }
     }
 
     button {

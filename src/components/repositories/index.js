@@ -42,6 +42,7 @@ function Repositories() {
                 < RepositoryItem
                   key={item.id}
                   name={item.name}
+                  language={item.language ? item.language : 'N/A'}
                   linkToRepo={item.html_url}
                   fullName={item.full_name} />
               ))}
@@ -55,6 +56,7 @@ function Repositories() {
                 < RepositoryItem
                   key={item.id}
                   name={item.name}
+                  language={item.language ? item.language : 'N/A'}
                   linkTorRepo={item.html_url}
                   fullName={item.full_name} />
               ))}

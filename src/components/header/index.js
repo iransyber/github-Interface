@@ -17,7 +17,7 @@ function Header() {
 
     return (
         <S.Wrapper>
-            <input type="text" placeholder="Buscar Repositorio" 
+            <input type="text" placeholder="Buscar Usuario" 
             onChange={(event) => setUsernameForSeach(event.target.value)}/>
             <button type="submit"
             onClick={submitGetUser}><span>Buscar</span></button>
